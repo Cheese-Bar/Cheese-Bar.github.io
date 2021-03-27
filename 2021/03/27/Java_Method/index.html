@@ -1,0 +1,493 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Here is a lot of Cheese" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Here is a lot of Cheese" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Here is a lot of Cheese" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://example.com/2021/03/27/Java_Method/">
+
+
+
+  <title>
+Week 6 Java Method |
+Cheese Bar = Here is a lot of Cheese</title>
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Week 6 Java Method
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-03-27 22:04:56">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-03-27T22:04:56+08:00">2021-03-27</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Cheese Bar</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/27/Java_Method/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Cheese Bar">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Here is a lot of Cheese">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p>Week 6 Java Method</p>
+<p>[TOC]</p>
+<h1 id="一、什么是Method"><a href="#一、什么是Method" class="headerlink" title="一、什么是Method"></a>一、什么是Method</h1><p>从外面看，方法可以理解成一个小黑盒（<strong>一个System</strong>）；</p>
+<p><em>“什么是System呢？好奇的同学可以去学习一下神奇的《信号和系统》或者简单理解就是一个小黑盒就可以啦！</em>”</p>
+<p>我们从外部给了它一些<strong>适当的</strong>参数，它处理完之后<strong>返回</strong>给我们一个或者多个正确的值</p>
+<p>就像下面这张图：</p>
+<p><img data-src="https://s.im5i.com/2021/03/27/WjXaf.png" alt="WjXaf.png"></p>
+<br/>
+
+<h1 id="二、为什么要用它"><a href="#二、为什么要用它" class="headerlink" title="二、为什么要用它"></a>二、为什么要用它</h1><ol>
+<li><p><strong>直观、简化</strong>：将原来一大串的代码分散，条理清晰；</p>
+<p><em>“大道至简，分而治之”</em></p>
+</li>
+<li><p><strong>便于维护</strong>：<em>“不会有人debug的时候想从10000+行的代码里找到有问题的变量吧，不会吧，不会吧。”</em></p>
+</li>
+<li><p><strong>减少冗余代码</strong>：<em>”但凡每个月都是28天，我要写这80行代码？——某位成功判断闰年的同学“</em></p>
+<br/>
+<br/>
+
+</li>
+</ol>
+<h1 id="三、Method的使用"><a href="#三、Method的使用" class="headerlink" title="三、Method的使用"></a>三、Method的使用</h1><h2 id="（一）声明"><a href="#（一）声明" class="headerlink" title="（一）声明"></a>（一）声明</h2><p>声明方法时需要注意的几点</p>
+<ol>
+<li>方法名</li>
+<li>传入参数</li>
+<li>返回参数</li>
+<li>是否静态</li>
+<li>可被使用的范围</li>
+<li>Your coding</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">methodName</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">      <span class="comment">/*从左往右依次是 </span></span><br><span class="line"><span class="comment">      	可被使用的范围</span></span><br><span class="line"><span class="comment">	是否静态</span></span><br><span class="line"><span class="comment">	返回值类型</span></span><br><span class="line"><span class="comment">	方法名</span></span><br><span class="line"><span class="comment">	（）内的都是参数</span></span><br><span class="line"><span class="comment">	&#123;&#125;内的是你想让这个小黑盒做的事</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">      <span class="comment">//your code</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<br/>
+
+<h2 id="（二）传入参数"><a href="#（二）传入参数" class="headerlink" title="（二）传入参数"></a>（二）传入参数</h2><p>注意辨别<strong>形式参数</strong>和<strong>实例参数</strong></p>
+<p><strong>形参：</strong> 声明方法时用定义的一个变量的名字。</p>
+<p><em>“因为你写方法的时候不知道会有什么数值进来，所以需要一个代号代表他们——未知数 <strong>X</strong>”</em></p>
+<br/>
+
+<p><strong>实参：</strong> 外部调用该方法时，给形参一个确定的值。</p>
+<p><em>“现在,你知道这个变量是啥了”</em></p>
+<br/>
+
+<h2 id="（三）返回值"><a href="#（三）返回值" class="headerlink" title="（三）返回值"></a>（三）返回值</h2><p><strong>返回值</strong>和<strong>return</strong>是好兄弟，什么事都要一起做； </p>
+<p>——返回值定义为<strong>int</strong>的时候 <strong>return value</strong>（int类型的数）；</p>
+<p>——返回值定义为<strong>int[]**的话 **return value</strong> （int[] 类型的数组）；</p>
+<p>当返回值溜走玩的时候（为<strong>void</strong>），return 也<strong>可以</strong>省略；</p>
+<center><b>“执行return后方法就结束了！”<br>
+“执行return后方法就结束了！”<br>
+“执行return后方法就结束了！”</b></center>
+<br/>
+
+<h2 id="（四）方法重载（Overload）"><a href="#（四）方法重载（Overload）" class="headerlink" title="（四）方法重载（Overload）"></a>（四）方法重载（Overload）</h2><p>一个方法的名字并<strong>不能</strong>唯一确定一个方法，就像你和与你异父异母却<strong>同名同姓</strong>的亲兄弟一样；</p>
+<p>但是身份证号可以，它是<strong>唯一的</strong>，不会重复的；</p>
+<p>那么在Java里， 一个方法的身份证号就是它的<strong>方法名字</strong> + <strong>传入的参数</strong>，这是唯一的。</p>
+<p>需要注意的一点是，<strong>传入的参数</strong>部分，<strong>不同数量</strong>、<strong>不同类型</strong>的传入参数的组合，再加上方法名，都可以成为一个唯一的身份证号。</p>
+<br/>
+
+<h1 id="四、方法调用栈"><a href="#四、方法调用栈" class="headerlink" title="四、方法调用栈"></a>四、方法调用栈</h1><h2 id="（一）方法的调用-返回顺序"><a href="#（一）方法的调用-返回顺序" class="headerlink" title="（一）方法的调用/返回顺序"></a>（一）方法的调用/返回顺序</h2><p><em>“哆啦A梦想偷懒，所以喊了B梦…….”</em></p>
+<p>A调用B，B调用C，C调用D，D解决问题给C，C给B，B给A；</p>
+<p>就像<strong>串糖葫芦</strong>和<strong>吃糖葫芦</strong>的顺序，后串上的先被吃；</p>
+<br/>
+
+<h2 id="（二）栈"><a href="#（二）栈" class="headerlink" title="（二）栈"></a>（二）栈</h2><p><em>“这是一根还没串上糖葫芦的签子”</em></p>
+<br/>
+
+<h2 id="（三）为什么是main？"><a href="#（三）为什么是main？" class="headerlink" title="（三）为什么是main？"></a>（三）为什么是main？</h2><p>因为它就是最开始的<strong>哆啦A梦</strong></p>
+<p><br/><br/><br/><br/></p>
+<h1 id="哆啦A梦的传送门：https-cheese-bar-github-io"><a href="#哆啦A梦的传送门：https-cheese-bar-github-io" class="headerlink" title="哆啦A梦的传送门：https://cheese-bar.github.io/"></a><strong>哆啦A梦</strong>的传送门：<span class="exturl" data-url="aHR0cHM6Ly9jaGVlc2UtYmFyLmdpdGh1Yi5pby8=">https://cheese-bar.github.io/</span></h1>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-03-27 22:38:53" itemprop="dateModified" datetime="2021-03-27T22:38:53+08:00">2021-03-27</time>
+  </span>
+  <span id="2021/03/27/Java_Method/" class="item leancloud_visitors" data-flag-title="Week 6 Java Method" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Cheese Bar WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Cheese Bar Alipay">
+        <p>Alipay</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>Cheese Bar <i class="ic i-at"><em>@</em></i>Here is a lot of Cheese
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/03/27/Java_Method/" title="Week 6 Java Method">http://example.com/2021/03/27/Java_Method/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/03/25/Week5_array/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit31ffoj20zk0m8naf.jpg" title="Week 5 Arrays">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Week 5 Arrays</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFMethod"><span class="toc-number">1.</span> <span class="toc-text">一、什么是Method</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E5%AE%83"><span class="toc-number">2.</span> <span class="toc-text">二、为什么要用它</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Method%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">三、Method的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%A3%B0%E6%98%8E"><span class="toc-number">3.1.</span> <span class="toc-text">（一）声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0"><span class="toc-number">3.2.</span> <span class="toc-text">（二）传入参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">3.3.</span> <span class="toc-text">（三）返回值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD%EF%BC%88Overload%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">（四）方法重载（Overload）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E6%A0%88"><span class="toc-number">4.</span> <span class="toc-text">四、方法调用栈</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%96%B9%E6%B3%95%E7%9A%84%E8%B0%83%E7%94%A8-%E8%BF%94%E5%9B%9E%E9%A1%BA%E5%BA%8F"><span class="toc-number">4.1.</span> <span class="toc-text">（一）方法的调用&#x2F;返回顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E6%A0%88"><span class="toc-number">4.2.</span> <span class="toc-text">（二）栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AFmain%EF%BC%9F"><span class="toc-number">4.3.</span> <span class="toc-text">（三）为什么是main？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%86%E5%95%A6A%E6%A2%A6%E7%9A%84%E4%BC%A0%E9%80%81%E9%97%A8%EF%BC%9Ahttps-cheese-bar-github-io"><span class="toc-number">5.</span> <span class="toc-text">哆啦A梦的传送门：https:&#x2F;&#x2F;cheese-bar.github.io&#x2F;</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Cheese Bar"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Cheese Bar</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">6</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NoZWVzZS1CYXI=" title="https:&#x2F;&#x2F;github.com&#x2F;Cheese-Bar"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tLw==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLw==" title="https:&#x2F;&#x2F;music.163.com&#x2F;"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20v" title="https:&#x2F;&#x2F;weibo.com&#x2F;"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS8=" title="https:&#x2F;&#x2F;about.me&#x2F;"><i class="ic i-address-card"></i></span>
+      <a href="/11911618@mail.sustech.edu.cn" title="11911618@mail.sustech.edu.cn" class="item email"><i class="ic i-envelope"></i></a>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/05/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/21/%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92/" title="Java A 互助课堂">Java A 互助课堂</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/03/27/Java_Method/" title="Week 6 Java Method">Week 6 Java Method</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/03/25/Week5_array/" title="Week 5 Arrays">Week 5 Arrays</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/03/13/Week%204%20Control%20Statement/" title="Week 4 Control Statement">Week 4 Control Statement</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/01/08/2021-01-08-Test/" title="Test">Test</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Cheese Bar @ Cheese Bar</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/03/27/Java_Method/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":220,"height":440},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
